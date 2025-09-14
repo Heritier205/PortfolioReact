@@ -1,0 +1,87 @@
+.Skills {
+    /* background-color: lightblue; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.Skills .Container {
+    /* background-color: lightgreen; */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 50px;
+}
+
+.Skills .Container .SkillContainer{
+    /* background-color: red; */
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.Skills .Container .skill {
+    /* background-color: lightcoral; */
+    border-radius: 5px;
+    font-size: 20px;
+    max-width: 600px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.Skills .Container .skill .title {
+    /* background-color: rgb(51, 51, 5); */
+    color: var(--titleColor);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.Skills .Container .skill .SkillsIcon{
+    fill: var(--titleColor);
+}
+
+.Skills .Container .skill .description {
+    color: var(--textColor);
+    font-size: 16px;
+    color: var(--textColor);
+    text-align: justify;
+}
+
+.Skills .Container .representation {
+    max-width: 400px;
+    min-width: 300px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.353);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    animation: rotate 30s linear infinite;
+    padding: 100px;
+}
+
+@keyframes rotate {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+.Skills .Container .representation span {
+    position: absolute;
+    animation: rotateR 30s linear infinite;
+    cursor: pointer;
+}
+
+@keyframes rotateR {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(-360deg);}
+}

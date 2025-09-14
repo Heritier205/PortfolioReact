@@ -1,0 +1,22 @@
+.Title{
+    color: var(--titleColor);
+    /* background-color: lightgreen; */
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 20px 0;
+}
+
+
+.SectionName{
+    font-size: 30px;
+}
+
+.Line{
+    height: 2px;
+    background-color: var(--titleColor);
+    margin: 0 5px;
+    flex: 1;
+    top: 100px;
+    transform: translateY(4px);
+}

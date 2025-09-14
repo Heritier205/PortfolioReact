@@ -1,0 +1,211 @@
+.Header .ScrollY {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: var(--scrollY);
+    height: 2px;
+    background: linear-gradient(to right, #00f260, #0575e6);
+    z-index: 10;
+}
+
+.Header .content {
+    position: fixed;
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+    min-height: 60px;
+    max-height: 80px;
+    height: 20vh;
+    width: 100%;
+    /* background-color: #34353A; */
+    backdrop-filter: blur(4px) saturate(150%);
+    /* -webkit-backdrop-filter: blur(12px) saturate(120%); */
+    z-index: 2;
+    /* margin: 0 80px; */
+
+}
+
+.Header .content img {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    margin: 25px;
+    border: none;
+}
+
+.Header .content a {
+    color: var(--titleColor);
+    text-decoration: none;
+    border: 1px solid #fff;
+    padding: 7px 20px;
+}
+
+.Header a.Resume:hover {
+    background-color: var(--titleColor);
+    color: var(--backgroundColor);
+    transition: .2s ease-in-out;
+}
+
+.Header .options {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 500px;
+    min-width: 200px;
+}
+
+.Header .Nav {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+}
+
+.Header .Menu {
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    transform-origin: center center;
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0;
+    text-align: center;
+    line-height: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 50%;
+    font-size: 14px;
+    transition: transform 0.1s ease;
+}
+
+
+.Header .Menu.active {
+    transform: translate(-50%, -50%) scale(1)rotate(45deg);
+    opacity: 1;
+}
+
+.Header .Nav a:hover {
+    font-family: 'poppins';
+    background-color: var(--titleColor);
+    color: var(--backgroundColor);
+    font-weight: bold;
+    transition: .3s ease-in;
+}
+
+.Header .Menu.skills {
+    width: 410px;
+    height: 410px;
+    background: #222;
+    transition: .6s ease-in;
+    z-index: 1;
+}
+
+.Header .Menu.services {
+    width: 290px;
+    height: 290px;
+    background: #666;
+    transition: .4s ease-in;
+    z-index: 3;
+}
+
+.Header .Menu.LifeJourney {
+    width: 350px;
+    height: 350px;
+    background: #444;
+    transition: .5s ease-in;
+    z-index: 2;
+}
+
+.Header .Menu.projects {
+    width: 230px;
+    height: 230px;
+    background: #888;
+    transition: .3s ease-in;
+    z-index: 4;
+}
+
+.Header .Menu.about {
+    width: 170px;
+    height: 170px;
+    background: #aaa;
+    transition: .2s ease-in;
+    z-index: 5;
+}
+
+.Header .Menu.home {
+    width: 100px;
+    height: 100px;
+    background: #ccc;
+    transition: .1s ease-in;
+    z-index: 6;
+}
+
+.Header .Burger {
+    /* background-color: red; */
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    fill: var(--titleColor);
+    border-radius: 0;
+    z-index: 10;
+    transition: transform .5s ease;
+    display: flex;
+}
+
+.Header .Burger.active {
+    fill: #000;
+    transform-origin: center center;
+    transform: translate(-50%, -50%) rotate(-60deg);
+    transition: transform .5s ease;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .Header .content {
+        /* flex-direction: column; */
+        align-items: center;
+        /* justify-content: space-between; */
+        height: auto;
+        padding: 10px;
+        transition: all 1s;
+    }
+
+    .Header .content img {
+        height: 60px;
+        width: 60px;
+        margin: 0;
+    }
+
+    .options {
+        /* flex-direction: column; */
+        align-items: center;
+    }
+
+    .Nav {
+        width: 100%;
+    }
+
+    .Resume {
+        max-height: 40px;
+        font-size: 15px;
+        text-align: center;
+        translate: 50px;
+
+    }
+
+    .Resume span {
+        display: none;
+    }
+
+
+}

@@ -1,0 +1,93 @@
+.About{
+    /* background-color: lightblue; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.About .Container{
+    /* background-color: lightgreen; */
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    flex: 1;
+    gap: 50px;
+}
+
+.About .story{
+    /* background-color: red; */
+    max-width: 500px;
+}
+
+.About .Container .Presentation {
+    display: flex;
+    /* background-color: red; */
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    gap: 50px;
+    font-size: 14px;
+    color: var(--textColor);
+    padding: 20px 0;
+    text-align: justify;
+    max-width: 80vw;
+    flex-wrap: wrap;
+}
+
+.About .picture img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.About .picture::before{
+    content: "";
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    border: 2px solid;
+    /* background-color: red; */
+    translate: 12px 15px;
+    border-radius: 10px;
+    z-index: -1;
+    border: 1px solid #fff;
+    
+
+}
+
+.About .Infos{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    color: var(--titleColor);
+}
+
+.About .Infos .info{
+    /* display: flex; */
+    min-width: 250px;
+}
+
+
+.About .Infos .info .triangle{
+    display: flex;
+    width: 12px;
+    
+    /* background-color: green; */
+}
+
+.About .Infos .info .infoTitle{
+    font-family: 'poppins';
+    font-weight: 200;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.About .Infos .info .infoContent{
+    font-family: 'poppins';
+    height: 20px;
+}
+

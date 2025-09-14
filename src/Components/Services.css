@@ -1,0 +1,189 @@
+.Services{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: aqua; */
+    min-height: 100vh;
+}
+
+.Services .container{
+    /* background-color: #f9f; */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 100px;
+}
+
+.Offers{
+    /* background-color: red; */
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 20px;
+    height: auto;
+}
+
+.representationDescription{
+    /* background: aqua; */
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.Phone {
+    display: none;
+}
+
+.Offers button, .Phone button{
+    font-family: 'poppins';
+    height: 30px;
+    aspect-ratio: 1/1;
+    display: flex;
+    font-weight: bold;
+    justify-content: center;   
+    align-items: center;
+    background: none;
+    border: 1px solid rgb(0, 173, 181);
+    border-radius: 50%;
+    color: #00ADB5;
+    font-size: 150%;
+    transition: .2s ease-in;
+    cursor: pointer;
+}
+
+.Services .NumeroService{
+    font-family: 'poppins';
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: center;
+    color: var(--titleColor);
+    font-weight: bold;
+
+
+}
+
+
+.Offers .right{
+    opacity: 0;
+    transform: translateX(100px);  
+    animation: fadeInX 0.8s ease forwards;
+}
+
+.Offers .left{
+    opacity: 0;
+    transform: translateX(-100px); 
+    animation: fadeInX 0.8s ease-in-out forwards;
+}
+
+@keyframes fadeInX {
+    to {
+        opacity: 1;
+        scale: 1;
+        transform: translateX(0);
+    }
+}
+
+
+
+
+
+
+
+
+
+.Offers button:hover , .Phone button:hover{
+    scale: 1.3;
+    background-color: #00ADB5;
+    color: #000;
+    box-shadow: 0px 0px 10px rgb(0, 173, 181, 1);
+    transition: .2s ease-out;
+}
+
+.Offers .Representation,.Offers .Description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+    align-items: center;
+}
+
+
+
+.Offers .Representation{
+    display: flex;
+    /* background-color: green; */
+    
+}
+
+.Offers .Description{
+    color: var(--textColor);
+    font-size: 15px;
+    /* background-color: blue; */
+    max-width: 500px;
+
+}
+
+.Offers .Representation .title{
+    color: var(--titleColor);
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 10px;
+}
+
+.Offers .Representation .title .Logo{
+    fill: var(--titleColor);
+    fill: #fff;
+    height: 40px;
+    width: 40px;
+}
+
+.Offers .Representation .tools{
+    margin: 5px;
+    max-width: 250px;
+    display: flex;
+    /* justify-content: space-around; */
+    flex-wrap: wrap;
+    gap: 10px;
+    
+}
+
+.Offers .Representation .tools img{
+    /* background-color: red; */
+    height: 40px;
+    width: 40px;
+    border: 1px solid #00000042;
+    padding: 5px;
+}
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    .Phone{
+        /* background-color: green; */
+        display: flex;
+        gap: 150px;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .Offers button{
+        display: none;
+    }
+
+    .Services .container{
+        gap: 20px;
+    }
+}

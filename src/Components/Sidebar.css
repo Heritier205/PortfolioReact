@@ -1,0 +1,82 @@
+.Sidebar{
+    /* background-color: lightgreen; */
+    width: 80px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: var(--linksFill);
+    z-index: 1;
+    
+    /* background: #34353A; */
+}
+
+.Vertical-line{
+    border-left: 1px solid var(--linksFill);
+    display: inline-block;
+    height: 25vh;
+    margin: 10px 0 0 0;
+    /* background-color: red; */
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /* background-color: red; */
+}
+li a{
+    /* background-color: #fff; */
+
+    /* writing-mode: vertical-lr; */
+    text-decoration: none;
+    color: inherit;
+}
+.Left {
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* background-color: lightblue; */
+}
+
+.sidebarLeft-icon {
+    width: 20px;      /* largeur visible */
+    height: 20px;     /* hauteur visible */
+    fill: var(--linksFill);     /* couleur noire (ou ce que tu veux)*/
+    display: block;   /* évite les comportements inline problématiques */
+    margin-top: 20px;
+    transition: .2s;
+}
+
+.sidebarLeft-icon:hover{
+    scale: 1.2;
+    transition: .2s;
+}
+
+.Right {
+    position: fixed;
+    top: 0;
+    right: 0;
+    /* background-color: lightcoral; */
+}
+
+li a{
+    transform: rotateZ(180deg);
+}
+
+.mail{
+    writing-mode: vertical-lr;
+}
+
+@media screen and (max-width: 768px) {
+    .Sidebar {
+        /* background-color: red; */
+        width: 60px;
+        display: none;
+    }
+}
+
+

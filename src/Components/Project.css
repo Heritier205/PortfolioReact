@@ -1,0 +1,96 @@
+.Projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: aqua; */
+    min-height: 100vh;
+}
+
+.Projects .Container {
+    /* background-color: lightgreen; */
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    flex: 1;
+    gap: 50px;
+}
+
+.Projects .Container .Cards {
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: center;
+    gap: 15vw;
+    flex-wrap: wrap;
+}
+
+.Projects .Container .Card {
+    /* background-color: white; */
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    /* width: 100%; */
+    /* flex-wrap: wrap; */
+
+}
+
+.Projects .Container .Card img {
+    height: 210px;
+    object-fit: cover;
+}
+
+.Projects .Container .Card .ProjectLegend {
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    /* padding: 5px 0; */
+}
+
+.Projects .Container .Card .ProjectLegend .projectTitle {
+    font-family: 'quicksand';
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--titleColor);
+}
+
+.Projects .Container .Card .ProjectLegend .projectDescription {
+    font-family: 'quicksand';
+    font-size: 14px;
+    width: 100%;
+    color: var(--textColor);
+    text-align: justify;
+    word-wrap: none;
+}
+
+.Projects .Container .Card .ProjectLegend .detail {
+    font-family: 'quicksand';
+    font-size: 14px;
+    color: var(--linksFill);
+    align-self: flex-end;
+}
+
+.Projects .Container .moreProject {
+    display: flex;
+    /* background-color: green; */
+    align-items: center;
+    font-family: 'quicksand';
+    font-size: 15px;
+    text-decoration: none;
+    align-self: center;
+    font-weight: 400;
+    color: var(--titleColor);
+    border: 1px solid #fff;
+    padding: 10px;
+    transition: .5s ease-in-out;
+    border-radius: 50px;
+}
+
+
+.Projects .Container .moreProject:hover {
+    background-color: var(--titleColor);
+    color: var(--backgroundColor);
+    transition: .5s ease-in-out;
+    scale: 1.1;
+}

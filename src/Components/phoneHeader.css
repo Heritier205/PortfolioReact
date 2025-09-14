@@ -1,0 +1,76 @@
+.PhoneHeader {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .PhoneHeader {
+    height: 80px;
+    width: 100vw;
+    /* background-color: green; */
+    position: fixed;
+    /* z-index: 1000; */
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.PhoneHeader .Container {
+    /* background-color: red; */
+    height: 50px;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    width: 90vw;
+    border-radius: 100px;
+    padding: 0 20px;
+    transition: .2s;
+
+}
+
+.PhoneHeader .Container .Socials, .Mail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: var(--linksFill);
+    height: 100%;
+    padding: 0 20px;
+    border-radius: 100px;
+}
+
+
+
+.PhoneLinks-icon {
+    width: 30px;
+    height: 30px;
+    fill: var(--linksFill);
+    display: block;
+    transition: .2s;
+    fill: var(--backgroundColor);
+    transition: .2s;
+    /* border: 1px solid; */
+
+}
+
+.PhoneLinks-icon:hover{
+    scale: 1.2;
+    transition: .3s;
+}
+
+.PhoneHeader .Container .Mail .PhoneMail{
+    height: 30px;
+    width: 30px;
+    fill: var(--backgroundColor);
+    /* background-color: red; */
+    display: flex;
+}
+
+.PhoneHeader .Container .Mail .PhoneMail:hover{
+    scale: 1.2;
+    transition: .3s;
+}
+
+
+}
