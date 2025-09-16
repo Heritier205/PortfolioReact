@@ -67,11 +67,11 @@
     padding: 0 5%;
     font-size: 20px;
     height: 300px;
-    gap: 20px;
+    gap: 10px;
     flex-wrap: wrap;
 }
 
-.Home .Description span{
+.Home .Description span {
     font-family: "Climate Crisis", sans-serif;
 }
 
@@ -100,50 +100,99 @@
     transition: .2s ease-in-out;
 }
 
-@media screen and (max-width: 768px) {
-    .Home .Description {
-        /* background-color: red; */
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0 5%;
-        font-size: 20px;
-        height: 300px;
-        gap: 20px;
-        flex-wrap: wrap;
-    }
+.Home div {
+    margin: 5vh 0;
+}
 
-    .Home div {
-        margin: 10% 0;
+@media screen and (max-width: 902px) {
+    .Home .Description {
+        /* justify-content: flex-start; */
+        /* align-items: left; */
+        flex-direction: column;
     }
 
     .name span {
-        font-size: 15px;
-        font-weight: 100;
+        font-size: 18px;
     }
 
     .name div {
-        display: inline;
-        font-size: 25px;
-        font-weight: bold;
+        font-size: 40px;
         /* background-color: red; */
     }
 
     .hello {
-        font-size: 20px;
-        font-weight: bold;
+        font-size: 25px;
     }
 
-    .hello span{
-        font-size: 10px;
-        font-weight: bold;
+    .hello span {
+        font-size: 15px;
     }
 
     .Home .domain {
-        font-size: 30px;
-        font-weight: bold;
-        display: inline;
+        font-size: 35px;
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 520px) {
+
+    .name span {
+        font-size: 14px;
+    }
+
+    .name div {
+        font-size: 34px;
+    }
+
+    .hello {
+        font-size: 24px;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+    .name span {
+        font-size: 14px;
+    }
+
+    .name div {
+        font-size: 25px;
+    }
+
+    .hello {
+        font-size: 20px;
+    }
+
+    .hello span {
+        font-size: 8px;
+    }
+
+    .Home .domain {
+        font-size: 28px;
+    }
+
+}
+
+@media screen and (max-width: 350px) {
+    .name span {
+        font-size: 10px;
+    }
+
+    .name div {
+        font-size: 19px;
+    }
+
+    .hello {
+        font-size: 14px;
+    }
+
+    .hello span {
+        font-size: 4px;
+    }
+
+    .Home .domain {
+        font-size: 24px;
     }
 
 }

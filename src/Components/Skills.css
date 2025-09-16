@@ -85,3 +85,32 @@
     from {transform: rotate(0deg);}
     to {transform: rotate(-360deg);}
 }
+
+
+@media screen and (max-width: 450px) {
+    .Skills .Container .representation {
+        min-width: 300px;
+        padding: 70px;
+
+    }
+
+    .Skills .Container .skill .description {
+        font-size: 14px;
+    }
+
+    .Skills {
+        overflow: hidden;
+    }
+
+    .Skills .Container .skill .title {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .Skills .Container .representation {
+        min-width: 50px;
+        padding: 90px;
+
+    }
+}

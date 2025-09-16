@@ -1,4 +1,4 @@
-.Journey{
+.Journey {
     /* background-color: lightblue; */
     display: flex;
     flex-direction: column;
@@ -6,7 +6,7 @@
     min-height: 80vh;
 }
 
-.Journey .Container{
+.Journey .Container {
     /* background-color: lightgreen; */
     display: flex;
     flex-direction: column;
@@ -16,13 +16,13 @@
     gap: 50px;
 }
 
-.Journey .Container .story{
+.Journey .Container .story {
     /* background-color: white; */
     display: flex;
     gap: 20px;
 }
 
-.Journey .Container .story .VLine{
+.Journey .Container .story .VLine {
     display: flex;
     position: relative;
     width: 2px;
@@ -30,7 +30,7 @@
     border-radius: 100px;
 }
 
-.Journey .Container .story .VLine .indicator{
+.Journey .Container .story .VLine .indicator {
     height: 30px;
     width: 150%;
     position: absolute;
@@ -43,7 +43,7 @@
 }
 
 
-.Journey .Container .story .fieldList{
+.Journey .Container .story .fieldList {
     /* background-color: red; */
     display: flex;
     flex-direction: column;
@@ -62,7 +62,7 @@
     color: #ffffff72;
 }
 
-.Journey .fieldList ol:hover{
+.Journey .fieldList ol:hover {
     color: #fff;
 }
 
@@ -71,7 +71,7 @@
     font-weight: 500;
 }
 
-.Journey .Container .story .content{
+.Journey .Container .story .content {
     /* background-color: aqua; */
     display: flex;
     gap: 20px;
@@ -79,7 +79,7 @@
 }
 
 
-.Journey .Container .story .content .head .title{
+.Journey .Container .story .content .head .title {
     font-family: quicksand;
     /* background-color: aquamarine; */
     font-weight: bold;
@@ -87,17 +87,60 @@
     color: #fff;
 }
 
-.Journey .Container .story .content .head .period{
+.Journey .Container .story .content .head .period {
     font-family: quicksand;
     font-size: 14px;
     color: #fff;
 }
 
-.Journey .Container .story .content .description{
+.Journey .Container .story .content .description {
     font-family: quicksand;
     font-size: 16px;
     color: #00ADB5;
     text-align: justify;
     line-height: 1.5;
     max-width: 600px;
+}
+
+@media screen and (max-width: 450px) {
+.Journey .fieldList ol{
+    font-size: 13px;
+}
+
+    .Journey .Container .story .content .description {
+        font-size: 14px;
+    }
+
+    .Journey .Container .story .content .head .title {
+        /* background-color: aquamarine; */
+        font-size: 25px;
+    }
+
+    .Journey .Container .story .content .head .period {
+        font-size: 14px;
+    }
+}
+
+
+@media screen and (max-width: 370px) {
+    .Journey .Container .story {
+    /* background-color: white; */
+    gap: 5px;
+}
+
+.Journey .fieldList ol{
+    font-size: 13px;
+}
+
+    .Journey .Container .story .content .description {
+        font-size: 12px;
+    }
+
+    .Journey .Container .story .content .head .title {
+        font-size: 20px;
+    }
+
+    .Journey .Container .story .content .head .period {
+        font-size: 13px;
+    }
 }
