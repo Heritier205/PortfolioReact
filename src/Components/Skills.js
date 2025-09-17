@@ -13,7 +13,7 @@ const Skills = ({ id }) => {
             <Title Section={Sections.Skills} />
                 <div className="toObserve SkillContainer">
                     <div className="toObserve skill">
-                        <div className="toObserve title"> <SkillsIcon className='SkillsIcon'/> Skills</div>
+                        <div className="toObserve title"> <SkillsIcon className='SkillsIcon'/> Compétences</div>
                         <hr />
                         <div className="toObserve description">{skillsText}</div>
                     </div>

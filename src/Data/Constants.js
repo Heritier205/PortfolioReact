@@ -34,8 +34,8 @@ export const Sections = {
     About: "Mon portfolio",
     Services: "Mes services / offres",
     Projects: "Projets Travaillés",
-    LifeJourney: "Mon parcour",
-    Skills: "Mes competences"
+    LifeJourney: "Mon parcours",
+    Skills: "Mes compétences"
 }
 
 export const Info = [
