@@ -166,7 +166,11 @@ export const skills = [
 ];
 
 
-export const skillsText = "I'm Passionate and results-driven UI/UX designer with seven years of experience in crafting intuitive and visually appealing user experiences. Skilled in user research, wireframing, prototyping, and usability testing. Strong collaborator and advocate for user-centered design. Seeking new opportunities to create impactful digital products."
+export const skillsText = `Étudiant passionné par le développement, je conçois des projets web 
+                            et mobiles en alliant créativité et sens pratique. J’aime apprendre 
+                            de nouvelles technologies et renforcer mes compétences à travers des 
+                            réalisations concrètes. Mon objectif est de créer des solutions
+                            modernes, performantes et adaptées aux besoins des utilisateurs.`
 export const positions = [
     { top: "10%", left: "20%" },
     { top: "20%", left: "60%" },
